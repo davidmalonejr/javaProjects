@@ -4,47 +4,45 @@ public class Genius {
 
 	/* main Method Declaration */
 	public static void main(String[] args) {
-		gotNames(); //Call Method gotNames()
-		gotJokes(); //Call Method gotJokes()
-		gotCommunityNorms(); //Call Method gotCommunityNorms()
+		gotNames(args[0]); //Call Method gotNames()
+		gotJokes(args[0],args[1],args[2]); //Call Method gotJokes()
+		gotCommunityNorms(args); //Call Method gotCommunityNorms()
 		
 		/*Add Your Method Calls Here*/
+		
 		
 	}
 
 	/* gotNames Method Declaration */
-	public static void gotNames() {
+	public static void gotNames(String name) {
 
 		/* GENIUS NAMES - SAY OUR NAMES */
-		System.out.println("My Name Is David Malone Jr."); // Print Genius Name
+		System.out.println("My Name Is " + name); // Print Genius Name
 		System.out.println("My Name Is Perry Irving."); // Print Genius Name
 		System.out.println("My Name Is Kevin Butler."); // Print Genius Name
 		System.out.println("");//Print Empty Lines
 		System.out.println("");//Print Empty Lines
+		
 	}
 
 	/* gotJokes Method Declaration */
-	public static void gotJokes() {
+	public static void gotJokes(String name, String jokeSetup, String jokePunchline) {
 
 		/* GENIUS JOKES - WE GOT JOKES */
-		System.out.println("Welcome, My Name Is David!"); // Print My Name
-		System.out.println("Why do rappers need umbrellas?"); // Joke Setup
-		System.out.println("Fo'Drizzle"); // Joke Punch Line
+		System.out.println("Welcome, My Name Is" + name+ "!"); // Print My Name
+		System.out.println(jokeSetup); // Joke Setup
+		System.out.println(jokePunchline); // Joke Punch Line
 		System.out.println(""); // Extra Line
 		System.out.println(""); // Extra Line
 
 	}
 
 	/* gotCommunityNorms Method Declaration */
-	public static void gotCommunityNorms() {
+	public static void gotCommunityNorms(String[] communityNorms) {
 		/* GENIUS COMMUNITY NORMS - KEEP US ACCOUNTABLE */
 		System.out.println("OUR COMMUNITY NORMS");
 		System.out.println("----------------------");
-		System.out.println("1. Community Norm 1");
-		System.out.println("2. Community Norm 2");
-		System.out.println("3. Community Norm 3");
-		System.out.println("4. Community Norm 4");
-		System.out.println("5. Community Norm 5");
+		System.out.println("1. " + communityNorms[3]);
 		System.out.println("----------------------");
 		System.out.println(""); // Extra Line
 		System.out.println(""); // Extra Line
@@ -52,5 +50,7 @@ public class Genius {
 	}
 
 	/* YOUR METHODS START HERE */
+	
+	
 
 }
